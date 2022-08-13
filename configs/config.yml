@@ -1,6 +1,41 @@
 Client: 
   Version: "1.0"
+  # Enter yout bot Token here!
   Token: ""
 
 Guild: 
-  ID: "994977034822484038"
+  # Enter your guild id
+  ID: ""
+  Role: 
+    # Enter role id of verify role
+    # This role will be received after 
+    # the verification is completed!
+    VerifyRole: 
+      - ""
+      - ""
+
+Mail: 
+  # Enter email address for mailing
+  Email: ""
+  # *Email application password
+  Password: ""
+  Config: 
+    From: '"MailVerify" <your-email@gmail.com>'
+
+Verify: 
+  # In seconds
+  ConfirmTime: 1800
+  EnterMailTime: 1200
+  EnterCodeTime: 900
+
+Punishment:
+  # BAN, KICK
+  ConfirmTimeOut: 
+    Type: KICK
+    Reason: "Verify confirm time out!"
+  EnterMailTimeOut: 
+    Type: KICK
+    Reason: "Enter mail time out!"
+  EnterCodeTimeOut: 
+    Type: KICK
+    Reason: "Enter code time out!"

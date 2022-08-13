@@ -29,9 +29,9 @@ if (!utils.config.Client.Token) {
     client.login(utils.config.Client.Token)
         .catch(error => {
             if (error.message.includes("An invalid token was provided")) {
-                console.log(cl.gray(`[${new Date().toLocaleString()}]`), cl.green.bold("[MailVerify]"), cl.red("[2/2]"), cl.white.bold("Your bot token is incorrect! Shutting down..."));
+                console.log(cl.gray(`[${new Date().toLocaleString()}]`), cl.green.bold("[MailVerify]"), cl.red.bold("Your bot token is incorrect! Shutting down..."));
             } else {
-                console.log(cl.gray(`[${new Date().toLocaleString()}]`), cl.green.bold("[MailVerify]"), cl.red("[2/2]"), cl.white.bold("An error occured while attempting to login to the bot!"));
+                console.log(cl.gray(`[${new Date().toLocaleString()}]`), cl.green.bold("[MailVerify]"), cl.red.bold("An error occured while attempting to login to the bot!"));
                 console.log(error);
             };
             process.exit();
